@@ -1,0 +1,13 @@
+.manifest {
+    background-color: white;
+    width: 100vw;
+    z-index: 1;
+    padding-left: 434px;
+
+    .chart {
+        width: 1000px;
+        height: 500px !important;
+        margin-top: 60px;
+        margin-bottom: 200px;
+    }
+}

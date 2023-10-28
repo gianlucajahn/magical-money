@@ -105,3 +105,8 @@ a {
     color-scheme: dark;
   }
 }
+
+/* shape divider - add this to the container holding the HTML widget */
+selector {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 33%, 0% 60%);
+}

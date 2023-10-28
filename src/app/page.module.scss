@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Caslon";
+  src: url('../resources/fonts/caslon.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Soehne";
+  src: url('../resources/fonts/soehne-400.otf') format('opentype');
+  font-weight: "400";
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Soehne Bold";
+  src: url('../resources/fonts/soehne-500.otf') format('opentype');
+  font-weight: "500";
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Soehne Extrabold";
+  src: url('../resources/fonts/soehne-600.otf') format('opentype');
+  font-weight: "600";
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Soehne Black";
+  src: url('../resources/fonts/soehne-700.otf') format('opentype');
+  font-weight: "700";
+  font-style: normal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+
+  .hero {
+    margin-bottom: 225px;
+
+    .heroInfo {
+      position: absolute;
+      left: 426px;
+      top: 452px;
+      z-index: 150;
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      padding-left: 4px;
+
+      .heroButtons {
+        padding-top: 16px;
+        display: flex;
+        gap: 18px;
+
+        a {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 24px;
+          font-size: 15px;
+          font-family: "Soehne Bold";
+          letter-spacing: 0.03em;
+        }
+
+        .cta {
+          background-color: #0A2540;
+          color: white;
+          padding: 0px 14px 0px 16px;
+          transition: 0.15s all;
+
+          svg {
+            transition: 0.15s all;
+          }
+
+          &:hover {
+            opacity: 0.7;
+
+            svg {
+              margin-left: 5px;
+            }
+          }
+        }
+
+        .contact {
+          padding: 3px 0px 4px 0px;
+          letter-spacing: 0.01em;
+          color: #0A2540;
+
+          svg {
+            transition: 0.15s all;
+          }
+
+          &:hover {
+            opacity: 0.7;
+
+            svg {
+              margin-left: 5px;
+            }
+          }
+        }
+
+
+      }
+
+      .divider {
+        position: absolute;
+        width: 1px;
+        height: 3240px;
+        background-color: #e7e7e7;
+        margin-left: -19px;
+        margin-top: -52px;
+        z-index: 300;
+      }
+
+      p {
+        max-width: 33.3%;
+        font-family: "Soehne", sans-serif;
+        color: #515e6b;
+        font-size: 18px;
+        margin-top: -4px;
+        line-height: 1.55;
+        letter-spacing: 0.012rem;
+      }
+    }
+  }
+
+  .heroText {
+    width: 459px;
+    height: auto;
+    position: absolute;
+    top: 290px;
+    z-index: 150;
+    left: 422px;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .blend {
+    position: absolute;
+    margin-bottom: 38px;
+    font-family: "Soehne Extrabold", sans-serif;
+    transform: scaleX(0.965);
+    z-index: 100;
+    font-size: 94px;
+    color: #111338;
+    max-width: 550px;
+    letter-spacing: -2.75px;
+    line-height: 1.0225;
+    overflow: hidden;
+    top: 226px;
+    left: 418px;
+    mix-blend-mode: color-burn;
+  }
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .curtain {
+    background-color: white;
+  }
+
+  .content {
+    z-index: 100 !important;
+    margin-top: -373px;
+    padding: 0 392px;
+    overflow: hidden;
+
+    .hero {
+      overflow: hidden;
+
+      .heroLeft {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        h1 {
+          margin-bottom: 38px;
+          font-family: "Soehne Extrabold", sans-serif;
+          transform: scaleX(0.965);
+          font-size: 94px;
+          color: #111338;
+          max-width: 550px;
+          letter-spacing: -2.75px;
+          line-height: 1.0225;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .curtain {
+    height: 200px;
+    top: 287px;
+    width: 130vw;
+    transform: rotate(168deg);
+    position: absolute;
+
+    &::after {
+      width: 130vw;
+      height: 500px;
+      background-color: white;
+      position: absolute;
+      content: "";
+      bottom: 0;
+    }
+  }
+}
+
+.canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #a960ee; 
+  --gradient-color-2: #ff333d; 
+  --gradient-color-3: #90e0ff;  
+  --gradient-color-4: #ffcb57;
+}
