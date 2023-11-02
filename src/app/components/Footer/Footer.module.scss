@@ -1,8 +1,8 @@
 .footer {
     display: flex;
-    background-color: #dadada;
+    background-color: #ededed;
     width: 100%;
-    padding: 50px 100px 80px 100px;
+    padding: 65px 0px 80px 424px;
 
     .footerSection {
         display: flex;
@@ -10,5 +10,20 @@
         gap: 8px;
         max-width: 240px;
         margin-right: 80px;
+    }
+
+    .companySection {
+        justify-content: space-between;
+
+        .logoImage {
+            height: 28px;
+            width: auto;
+            filter: invert(100%);
+        }
+
+        h3 {
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
 }
