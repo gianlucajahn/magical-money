@@ -46,7 +46,7 @@ export default function NavBar() {
           initial={{ y: -70 }}
           transition={{ duration: 0.7, type: "spring", bounce: 0.25 }}
         >
-          Education
+          Consulting
         </motion.h3>
       </div>
     </section>
