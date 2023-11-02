@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Arrow from "@/resources/images/arrow";
 import Manifest from "./components/Manifest/Manifest";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   const gradient = new Gradient();
@@ -35,7 +36,7 @@ export default function Home() {
           <div className={css.heroInfo}>
             <div className={css.divider} />
             <p>
-              The most precise calculator for compound interest in the stock
+              The most precise calculators for compound interest in the stock
               market, personalized withdrawal plans and financial education.
               Built on top of a state-of-the-art technology stack - now
               available for free on the web.
@@ -46,7 +47,7 @@ export default function Home() {
                 <Arrow color='#fff' />
               </a>
               <a className={css.contact}>
-                Get in touch
+                Personal Consulting
                 <Arrow color='#0A2540' />
                 </a>
             </div>
@@ -54,6 +55,7 @@ export default function Home() {
         </div>
         <div className={css.curtain} />
         <Manifest />
+        <Footer />
       </main>
     </>
   );

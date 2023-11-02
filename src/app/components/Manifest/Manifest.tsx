@@ -232,7 +232,7 @@ export default function Manifest(props: ManifestProps) {
 
   const barsOption = {
     title: {
-      text: "% of minimum income for survival covered by average pension",
+      text: "% of minimal income necessary for survival covered by average pension",
     },
     tooltip: {
       trigger: 'axis',
