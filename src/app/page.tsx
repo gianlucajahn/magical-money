@@ -8,6 +8,7 @@ import Image from "next/image";
 import Arrow from "@/resources/images/arrow";
 import Manifest from "./components/Manifest/Manifest";
 import Footer from "./components/Footer/Footer";
+import Settings from "./components/Settings/Settings";
 
 export default function Home() {
   const gradient = new Gradient();
@@ -57,6 +58,7 @@ export default function Home() {
         <Manifest />
         <Footer />
       </main>
+      <Settings />
     </>
   );
 }

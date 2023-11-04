@@ -284,8 +284,7 @@ export default function Manifest(props: ManifestProps) {
       </Heading>
       <script src="echarts.js"></script>
       <ReactEcharts option={compoundOption} className={css.chart} />
-
-
+      
       <Subheading color="#ff5789">Don't worry about old-age poverty anymore</Subheading>
       <Heading delay={0.15}>
         Build an inflation-adjusted withdrawal plan with us and compound even in
