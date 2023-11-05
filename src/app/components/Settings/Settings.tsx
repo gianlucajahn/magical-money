@@ -27,6 +27,9 @@ export default function Settings(props: SettingsProps) {
         scale: 1.125,
         transition: { type: "spring", duration: 0.6, bounce: 0.6 },
       }}
+      whileTap={{
+        scale: 1
+      }}
     >
       {!isExpanded ? (
         <Image
