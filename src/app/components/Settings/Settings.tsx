@@ -23,7 +23,10 @@ export default function Settings(props: SettingsProps) {
       className={classNames(css.settings, {
         [css.isExpanded]: isExpanded,
       })}
-      whileHover={{ scale: 1.125, transition: { type: "spring", duration: 0.6, bounce: 0.6 } }}
+      whileHover={{
+        scale: 1.125,
+        transition: { type: "spring", duration: 0.6, bounce: 0.6 },
+      }}
     >
       {!isExpanded ? (
         <Image
