@@ -9,14 +9,6 @@ interface SettingsProps {}
 export default function Settings(props: SettingsProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  useEffect(() => {
-    console.log(document.body.scrollTop);
-    if (document.body.scrollTop >= 1000) {
-      document.getElementById("settings")!.style.backgroundColor = "white";
-    } else {
-    }
-  });
-
   return (
     <motion.div
       id="settings"
