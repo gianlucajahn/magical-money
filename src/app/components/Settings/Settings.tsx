@@ -9,6 +9,9 @@ interface SettingsProps {}
 
 export default function Settings(props: SettingsProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [languageVisible, setLanguageVisible] = useState(false);
+  const [colormodeVisible, setColormodeVisible] = useState(false);
+  const [currencyVisible, setCurrencyVisible] = useState(false);
 
   const toggleSettings = () => {
     if (isExpanded) {
@@ -16,6 +19,26 @@ export default function Settings(props: SettingsProps) {
     }
     setIsExpanded(true);
   };
+
+  useEffect(() => {
+    if (isExpanded) {
+      setTimeout(() => {
+        setCurrencyVisible(true);
+      }, 115);
+
+      setTimeout(() => {
+        setColormodeVisible(true);
+      }, 230);
+
+      setTimeout(() => {
+        setLanguageVisible(true);
+      }, 345);
+    } else {
+      setLanguageVisible(false);
+      setColormodeVisible(false);
+      setCurrencyVisible(false);
+    }
+  }, [isExpanded]);
 
   return (
     <motion.div
@@ -35,30 +58,72 @@ export default function Settings(props: SettingsProps) {
     >
       {isExpanded ? (
         <div className={css.settingsContent}>
-          <div className={css.settingsRow}>
+          <motion.div
+            className={css.settingsRow}
+            id="languageOption"
+            style={{ opacity: 1 }}
+            initial={{ scale: 0 }}
+            animate={{
+              scale: 1,
+              transition: {
+                type: "spring",
+                duration: 0.45,
+                bounce: 0.3,
+                delay: 0.345,
+              },
+            }}
+          >
             <h3>Language</h3>
             <div className={css.settingsOptions}>
               <SettingsOption>English</SettingsOption>
               <SettingsOption>German</SettingsOption>
             </div>
-          </div>
+          </motion.div>
 
-          <div className={css.settingsRow}>
+          <motion.div
+            className={css.settingsRow}
+            id="colorOption"
+            style={{ opacity: 1 }}
+            initial={{ scale: 0 }}
+            animate={{
+              scale: 1,
+              transition: {
+                type: "spring",
+                duration: 0.45,
+                bounce: 0.3,
+                delay: 0.23,
+              },
+            }}
+          >
             <h3>Color Mode</h3>
             <div className={css.settingsOptions}>
               <SettingsOption>Light Mode</SettingsOption>
               <SettingsOption>Dark Mode</SettingsOption>
             </div>
-          </div>
+          </motion.div>
 
-          <div className={css.settingsRow}>
+          <motion.div
+            className={css.settingsRow}
+            id="currencyOption"
+            style={{ opacity: 1 }}
+            initial={{ scale: 0 }}
+            animate={{
+              scale: 1,
+              transition: {
+                type: "spring",
+                duration: 0.45,
+                bounce: 0.3,
+                delay: 0.115,
+              },
+            }}
+          >
             <h3>Currency</h3>
             <div className={css.settingsOptions}>
               <SettingsOption>Euro</SettingsOption>
               <SettingsOption>CHF</SettingsOption>
               <SettingsOption>USD</SettingsOption>
             </div>
-          </div>
+          </motion.div>
         </div>
       ) : null}
       {!isExpanded ? (
