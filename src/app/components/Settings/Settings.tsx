@@ -3,6 +3,7 @@ import css from "./Settings.module.scss";
 import { motion } from "framer-motion";
 import classNames from "classnames";
 import Image from "next/image";
+import SettingsOption from "./SettingsOption";
 
 interface SettingsProps {}
 
@@ -37,7 +38,7 @@ export default function Settings(props: SettingsProps) {
           <div className={css.settingsRow}>
             <h3>Language</h3>
             <div className={css.settingsOptions}>
-              <button className={css.settingsOption}>English</button>
+              <SettingsOption>English</SettingsOption>
               <button className={css.settingsOption}>German</button>
             </div>
           </div>
@@ -56,13 +57,6 @@ export default function Settings(props: SettingsProps) {
               <button className={css.settingsOption}>Euro</button>
               <button className={css.settingsOption}>CHF</button>
               <button className={css.settingsOption}>USD</button>
-            </div>
-          </div>
-
-          <div className={css.settingsRow}>
-            <h3>Privacy</h3>
-            <div className={css.settingsOptions}>
-              <p>Learn more...</p>
             </div>
           </div>
         </div>
