@@ -29,7 +29,7 @@
 
 .isExpanded {
     width: 233px;
-    height: 284px;
+    height: 273px;
     background-color: #e4e4e4;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding-bottom: 30px;
+    padding-bottom: 22px;
     padding-left: 6px;
 
     .settingsRow {
@@ -52,6 +52,7 @@
         h3 {
             font-family: "Inter", sans-serif;
             font-size: 18px;
+            color: #0A2540;
         }
 
         .settingsOptions {
@@ -70,7 +71,7 @@
                 transition: background-color 0.15s;
 
                 &:hover {
-                    background-color: #505050;
+                    background-color: #6e6e6e;
                 }
             }
 
