@@ -39,24 +39,24 @@ export default function Settings(props: SettingsProps) {
             <h3>Language</h3>
             <div className={css.settingsOptions}>
               <SettingsOption>English</SettingsOption>
-              <button className={css.settingsOption}>German</button>
+              <SettingsOption>German</SettingsOption>
             </div>
           </div>
 
           <div className={css.settingsRow}>
             <h3>Color Mode</h3>
             <div className={css.settingsOptions}>
-              <button className={css.settingsOption}>Light Mode</button>
-              <button className={css.settingsOption}>Dark Mode</button>
+              <SettingsOption>Light Mode</SettingsOption>
+              <SettingsOption>Dark Mode</SettingsOption>
             </div>
           </div>
 
           <div className={css.settingsRow}>
             <h3>Currency</h3>
             <div className={css.settingsOptions}>
-              <button className={css.settingsOption}>Euro</button>
-              <button className={css.settingsOption}>CHF</button>
-              <button className={css.settingsOption}>USD</button>
+              <SettingsOption>Euro</SettingsOption>
+              <SettingsOption>CHF</SettingsOption>
+              <SettingsOption>USD</SettingsOption>
             </div>
           </div>
         </div>
